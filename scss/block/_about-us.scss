@@ -1,0 +1,133 @@
+.about-us-section {
+	padding: 198px 0 140px;
+	background-color: #012f34;
+}
+
+.au {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: start;
+}
+.au__left {
+	max-width: 445px;
+}
+.au__title {
+	color: #fff;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+}
+.au__list {
+}
+.au__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 550px;
+	margin-bottom: 32px;
+}
+.au__item-title {
+	padding-left: 95px;
+	color: #f67e7e;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+	margin-bottom: 16px;
+}
+.au__text {
+	padding-left: 95px;
+	color: #fff;
+	font-size: 15px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 25px;
+}
+
+.item1::before {
+	position: absolute;
+	content: "";
+	width: 72px;
+	height: 72px;
+	background-image: url(../../images/au1.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	left: 0;
+	top: 50%px;
+}
+
+.item2::before {
+	position: absolute;
+	content: "";
+	width: 72px;
+	height: 72px;
+	background-image: url(../../images/au2.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	left: 0;
+	top: 50%px;
+}
+.item3::before {
+	position: absolute;
+	content: "";
+	width: 72px;
+	height: 72px;
+	background-image: url(../../images/au3.svg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	left: 0;
+	top: 50%px;
+}
+
+@media only screen and (max-width: 850px) {
+	.au {
+		flex-direction: column;
+		align-items: start;
+	}
+	.au__left {
+		max-width: 545px;
+		margin-bottom: 64px;
+	}
+	.au__title {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.about-us-section {
+		padding: 100px 0 64px;
+	}
+	.au__left {
+		max-width: 240px;
+		margin-bottom: 54px;
+	}
+
+	.au__item {
+		align-items: center;
+		text-align: center;
+	}
+
+	.au__text {
+		padding-left: 0;
+	}
+	.au__item-title {
+		padding-top: 95px;
+		padding-left: 0;
+	}
+
+	.item1::before {
+		top: 0;
+		left: 125px;
+	}
+	.item2::before {
+		top: 0;
+		left: 125px;
+	}
+	.item3::before {
+		top: 0;
+		left: 125px;
+	}
+}

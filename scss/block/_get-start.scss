@@ -1,0 +1,52 @@
+.get-start-section {
+	padding: 86px 0;
+	background-image: url(../../images/ready-bg.svg);
+	background-size: 200px 244px;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	background-color: #f67e7e;
+}
+.container {
+}
+.gs {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.gs__title {
+	color: #012f34;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+}
+.gs__link {
+	color: #012f34;
+	padding: 9px 33px 11px 32px;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: 28px;
+	border-radius: 24px;
+	border: 2px solid #012f34;
+
+	&:hover {
+		color: #f67e7e;
+		background-color: #fff;
+		border-color: #fff;
+	}
+}
+
+@media (max-width: 860px) {
+	.gs__title {
+		font-size: 32px;
+		line-height: 32px;
+	}
+}
+
+@media (max-width: 600px) {
+	.gs {
+		flex-direction: column;
+		gap: 24px;
+	}
+}

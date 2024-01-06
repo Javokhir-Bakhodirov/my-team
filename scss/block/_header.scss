@@ -32,6 +32,11 @@
 	font-style: normal;
 	font-weight: 600;
 	line-height: 28px;
+	transition: color 0.3s ease;
+
+	&:hover {
+		color: #f67e7e;
+	}
 }
 
 .header__btn {
@@ -42,18 +47,15 @@
 	border-radius: 24px;
 	border: 2px solid #fff;
 	padding: 9px 33px 11px 32px;
-}
+	transition: all 0.3s ease;
 
-@media only screen and (max-width: 1300px) {
-	.container {
-		padding: 0 90px;
+	&:hover {
+		color: #002529;
+		background-color: #fff;
 	}
 }
 
 @media only screen and (max-width: 770px) {
-	.container {
-		padding: 0 90px;
-	}
 	.header__logo {
 		width: 128px;
 		height: 32px;
@@ -71,9 +73,13 @@
 
 @media only screen and (max-width: 650px) {
 	.header__mobi-line {
-		display: inline-block;
+		display: block;
 	}
-	.header__btn {
+	.header__btn,
+	nav {
+		display: none;
+	}
+	.navbar__list {
 		display: none;
 	}
 }
@@ -81,11 +87,5 @@
 @media only screen and (max-width: 550px) {
 	.site-header {
 		padding: 35px 0 133px;
-	}
-	.container {
-		padding: 0 20px;
-	}
-	.navbar {
-		display: none;
 	}
 }

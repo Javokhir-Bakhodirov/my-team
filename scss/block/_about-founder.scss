@@ -1,0 +1,100 @@
+.founders-section {
+	background-color: #004047;
+	padding: 140px 0;
+	background-image: url(../images/about-section/founder-bg1.svg),
+		url(../images/about-section/founder-bg2.svg);
+	background-repeat: no-repeat, no-repeat;
+	background-size: 200px 200px, 147px 100px;
+	background-position: top left, bottom right;
+}
+.founders {
+	display: flex;
+	flex-direction: column;
+}
+.founders__title {
+	color: #fff;
+	text-align: center;
+	font-size: 48px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 48px;
+	margin-bottom: 58px;
+}
+.founders__list {
+	width: 100%;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	gap: 36px;
+}
+.founders__item {
+	position: relative;
+	padding: 32px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 350px;
+	height: 253px;
+	flex-shrink: 0;
+	background-color: #012f34;
+
+	&::after {
+		position: absolute;
+		content: "";
+		width: 56px;
+		height: 56px;
+		background-image: url(../images/about-section/founder-circle.svg);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		bottom: -28px;
+	}
+
+	&:last-child::after {
+		position: absolute;
+		content: "";
+		width: 56px;
+		height: 56px;
+		background-image: url(../../images/about-section/founder-cirecle2.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		bottom: -28px;
+	}
+}
+
+.founders__img {
+	width: 96px;
+	height: 96px;
+	margin-bottom: 16px;
+}
+.founder__name {
+	color: #79c8c7;
+	text-align: center;
+	font-size: 18px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: 28px;
+}
+.founder__job {
+	color: #fff;
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+	font-weight: 500;
+	line-height: 25px;
+}
+
+.item__black {
+	background-color: #002529;
+}
+
+@media (max-width: 1180px) {
+	.founders__item {
+		min-width: 281px;
+	}
+	.founders__list {
+		align-items: center;
+	}
+}
